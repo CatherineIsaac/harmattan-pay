@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block title %}Security Level - Harmattan Pay{% endblock %}
+{% block content %}
+<h1>Security Level</h1>
+<p>Current level: <strong>{{ level }}</strong></p>
+<form method="POST">
+  <select name="level">
+    <option value="low">Low (vulnerable)</option>
+    <option value="high">High (secure)</option>
+  </select>
+  <button type="submit">Set level</button>
+</form>
+<p class="hint">Low leaves the app exploitable. High applies the secure fix. Switch levels and re-run your attacks to compare.</p>
+{% endblock %}

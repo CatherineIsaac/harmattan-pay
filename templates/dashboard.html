@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block title %}Dashboard - Harmattan Pay{% endblock %}
+{% block content %}
+<h1>Welcome, {{ user["username"] }}</h1>
+<div class="balance-card">
+  <div class="balance-label">Available balance</div>
+  <div class="balance-amount">&#8358;{{ user["balance"] }}</div>
+</div>
+{% endblock %}

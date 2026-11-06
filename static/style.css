@@ -1,0 +1,24 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background: #f4f1ea; color: #1f2430; }
+.topbar { background: #14233b; color: #fff; padding: 18px 28px; display: flex; align-items: baseline; gap: 16px; }
+.brand { font-size: 22px; font-weight: 700; }
+.tagline { color: #d9a441; font-size: 14px; }
+.layout { display: flex; min-height: calc(100vh - 120px); }
+.sidebar { width: 210px; background: #1f3251; padding: 20px 0; display: flex; flex-direction: column; }
+.sidebar a { color: #cdd6e4; text-decoration: none; padding: 12px 24px; font-size: 15px; }
+.sidebar a:hover { background: #2a4269; color: #fff; }
+.seclevel { margin-top: auto; padding: 16px 24px; color: #9fb0c9; font-size: 13px; border-top: 1px solid #2a4269; }
+.seclevel strong { color: #d9a441; text-transform: uppercase; }
+.content { flex: 1; padding: 36px 44px; max-width: 640px; }
+h1 { margin-top: 0; color: #14233b; }
+form { display: flex; flex-direction: column; gap: 6px; max-width: 320px; }
+label { font-size: 13px; font-weight: 600; margin-top: 10px; color: #3a4659; }
+input, select { padding: 10px; border: 1px solid #c7cdd8; border-radius: 6px; font-size: 15px; }
+button { margin-top: 16px; padding: 11px; background: #d9a441; color: #14233b; border: none; border-radius: 6px; font-size: 15px; font-weight: 700; cursor: pointer; }
+button:hover { background: #c6912f; }
+.error { color: #b5302b; font-weight: 600; }
+.hint { color: #5a6676; font-size: 13px; margin-top: 18px; }
+.balance-card { background: #14233b; color: #fff; padding: 24px 28px; border-radius: 10px; max-width: 320px; margin-top: 16px; }
+.balance-label { font-size: 13px; color: #9fb0c9; }
+.balance-amount { font-size: 32px; font-weight: 700; color: #d9a441; margin-top: 6px; }
+.footer { background: #14233b; color: #8fa0b8; text-align: center; padding: 14px; font-size: 12px; }

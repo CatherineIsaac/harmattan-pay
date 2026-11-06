@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Harmattan Pay{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Harmattan Pay</div>
+    <div class="tagline">Your money, moving fast.</div>
+  </header>
+  <div class="layout">
+    <nav class="sidebar">
+      <a href="/">Home</a>
+      <a href="/signup">Sign up</a>
+      <a href="/login">Log in</a>
+      <a href="/dashboard">Dashboard</a>
+      <a href="/security">Security Level</a>
+      {% if session.get('username') %}<a href="/logout">Log out</a>{% endif %}
+      <div class="seclevel">Security: <strong>{{ session.get('security', 'low') }}</strong></div>
+    </nav>
+    <main class="content">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+  <footer class="footer">Harmattan Pay. Intentionally vulnerable training app. Run locally only.</footer>
+</body>
+</html>
